@@ -19,8 +19,6 @@ TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
 EMAIL_HOST = 'smtp.gmail.com'  # since you are using a gmail account
 EMAIL_PORT = 587  # Gmail SMTP port for TLS
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'imvarun23@gmail.com'
-EMAIL_HOST_PASSWORD = '9653534359'
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
