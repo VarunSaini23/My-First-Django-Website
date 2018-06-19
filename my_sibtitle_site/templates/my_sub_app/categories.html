@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends 'my_sub_app/base.html' %}
+
+{% block head_block %}<title>Categories</title>{% endblock %}
+
+{%block body_block%}
+<div class="container">
+  <div class="jumbotron">
+    <h1>These are the Categories: </h1>
+    <h2>Based on language:</h2>
+    <ul>
+
+    <li><a href="{% url 'cat-eng' %}" style="color:red; font-size: 20px ;font-family: 'Slabo 27px', serif;">English</a></li>
+    <li><a href="{% url 'cat-hin' %}" style="color:red; font-size: 20px ;font-family: 'Slabo 27px', serif;">Hindi</a></li>
+    <li><a href="{% url 'cat-pun' %}" style="color:red; font-size: 20px ;font-family: 'Slabo 27px', serif;">Punjabi</a></li>
+    </ul>
+    <h2>Based on genre:</h2>
+    <ul>
+      <li><a href="{% url 'cat-com' %}" style="color:red; font-size: 20px ;font-family: 'Slabo 27px', serif;">Comedy</a></li>
+      <li><a href="{% url 'cat-sci-fi' %}" style="color:red; font-size: 20px ;font-family: 'Slabo 27px', serif;">Sci-fi</a></li>
+      <li><a href="{% url 'cat-adv' %}" style="color:red; font-size: 20px ;font-family: 'Slabo 27px', serif;">Adventure</a></li>
+
+    </ul>
+  </div>
+
+</div>
+{%endblock%}

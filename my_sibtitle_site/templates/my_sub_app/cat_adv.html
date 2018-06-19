@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% extends 'my_sub_app/base.html' %}
+
+{% block head_block %}<title>Adventure</title>{% endblock %}
+
+{%block body_block%}
+<div class="container">
+  <div class="jumbotron">
+    <h1>These are the list of Adventure movies.</h1>
+      <ol>
+        <li><a href="https://www.imdb.com/title/tt3778644/">Solo-A Star Wars Story</a></li>
+        <li><a href="https://www.imdb.com/title/tt4701182/">Bumblebee</a></li>
+        <li><a href="https://www.imdb.com/title/tt1365519/">Tomb Raider</a></li>
+        <li><a href="https://www.imdb.com/title/tt6306064/">Adrift</a></li>
+      </ol>
+
+  </div>
+
+</div>
+{%endblock%}

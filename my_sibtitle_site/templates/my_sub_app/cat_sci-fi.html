@@ -1,0 +1,22 @@
+
+
+<!DOCTYPE html>
+{% extends 'my_sub_app/base.html' %}
+
+{% block head_block %}<title>Sci-Fi</title>{% endblock %}
+
+{%block body_block%}
+<div class="container">
+  <div class="jumbotron">
+    <h1>These are the list of Sci-Fi movies.</h1>
+      <ol>
+        <li><a href="https://www.imdb.com/title/tt1825683/?ref_=nv_sr_1">Black Panther</a></li>
+        <li><a href="https://www.imdb.com/title/tt1375666/?ref_=fn_al_tt_1">Inception</a></li>
+        <li><a href="https://www.imdb.com/title/tt0816692/?ref_=nv_sr_1">Interstellar</a></li>
+        <li><a href="https://www.imdb.com/title/tt1571234/?ref_=nv_sr_1">Mortal-Engines</a></li>
+      </ol>
+
+  </div>
+
+</div>
+{%endblock%}

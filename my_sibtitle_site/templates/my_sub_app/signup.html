@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+{% extends "my_sub_app/base.html" %}
+
+{% block head_block %}
+  SignUp
+{% endblock %}
+
+{% block body_block %}
+<h1>This is the Signup Page</h1>
+<div class="container">
+  <div class="jumbotron">
+    <form method="POST">
+      {{form.as_p}}
+      {% csrf_token %}
+
+      <input type="submit" class="btn btn-primary" value="Submit">
+    </form>
+
+  </div>
+
+</div>
+
+
+{% endblock %}
